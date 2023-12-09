@@ -47,4 +47,8 @@ Additional eval dataset for both the tasks were used to get a representative sam
 
 
 ## Execution
-All code is in the notebooks folder separated between the 2 tasks. There is one notebook for each dataset and a separate notebook for generalization evaluation. 
+* All code is in the notebooks folder separated between the 2 tasks. There is one notebook for each dataset and a separate notebook for generalization evaluation.
+
+* Each notebook saves the results in the local directory which would have to be created according to the path mentioned in the code.
+
+* Final results are processed using notebooks in post-processing folders where we each dataset result-[dataset-name].ipynb processes dataset specific results and agg-*.ipynb aggregates the dataset specific results and processes the results for a task to generate metrics and plots which are saved in each task's analysis_results folder.
